@@ -20,10 +20,3 @@ app.listen(
 
 // Middleware - Might delete this later
 app.use(express.json());
-
-// GENERAL TODO LIST
-// TODO: Look into middleware
-
-// TODO: Look into ORM
-
-// TODO: Docker?!
