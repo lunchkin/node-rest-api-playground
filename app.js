@@ -1,5 +1,5 @@
 require('dotenv').config();
-require('dotenv-defaults').config()
+require('dotenv-defaults').config();
 
 const express = require('express');
 const app = express();
@@ -9,7 +9,7 @@ const fs = require('fs');
 const routePath = path.join(__dirname, 'routes');
 const fileNames = fs.readdirSync(routePath);
 const PORT = process.env.PORT || 3000;
-const test = 'test';
+
 fileNames.forEach(fileName => {
     app.use(`/${fileName.slice(0, -3)}`, require(`./routes/${fileName}`));
 });
