@@ -4,14 +4,14 @@ const router = express.Router();
 router.get('/two', (req, res) => {
     res.status(200).json({
         'success': 1,
-        'message': 'Hello World Two in routes/testingOne.js'
+        'message': 'Hello World Two in api/testingOne.js'
     });
 });
 
 router.get('/', (req, res) => {
     res.status(200).send({
         success: 1,
-        message: 'Hello World in routes/testingOne.js'
+        message: 'Hello World in api/testingOne.js'
     });
 });
 
